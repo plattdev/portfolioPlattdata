@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* cuando ponemos padding (margen interno), el padding aumenta la caja, por eso tenemos que poner si o si: */
+    box-sizing: border-box;
+}
+
+/* Todos estos estilos son a nivel general */
+
+a {
+    text-decoration: none;
+    /* el color que va a coger de su padre, el negro en este caso */
+    color: gray;
+
+    &:hover {
+        color: orange;
+    }
+}

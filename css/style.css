@@ -1,0 +1,140 @@
+/* STYLE */
+body {
+    /* color de fondo */
+    background-color: #fafafa;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logoNombre {
+    /* convierte en horizontal */
+    display: flex;
+    /* alinea en la vertical */
+    align-items: center;
+    gap:20px;
+    /* centra el contenido en la horizontal */
+    justify-content: center;
+
+    & a{
+       & img{
+            /* reducir la imagen */
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 1px solid black
+        }
+    }
+}
+
+
+nav{
+    /* alinea en la vertical */
+    display: flex;
+    justify-content: center;
+
+    & ul{
+        /* alinea en la horizontal */
+        display: flex;
+        gap: 20px;
+        list-style: square;
+    }
+
+}
+
+/* MAIN */
+.hero{
+    /* bg image permite que el texto quede encima */
+    /* este background img no te da seo, deberia de salir en otra index.html como html img */
+  
+    background-image: url('../img/jari-hytonen-unsplash.avif');
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+    /* el 50% del dispositivo */
+    height: 50dvh;
+    padding: 100px;
+    font-family: sans-serif;
+
+    & article{
+        
+        & h2{
+            text-shadow: 2px 2px 4px rgba(255, 140, 0, 0.7);
+            font-size: 3 rem;
+        }
+    
+        & h3{
+            font-size: 2 rem;
+            /* para bajar el boton */
+            margin-bottom: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    
+        .btn{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #47330b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #fe8827;
+            }
+        }
+    }
+
+    }
+
+
+/* FOOTER  */
+footer {
+    background-color: rgb(65, 65, 65);
+    color: rgb(225, 225, 225);
+
+    /* se puede quitar el section, pero va bien */
+    & section.centrarFooter {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+
+
+       & article.linksFooter {
+            display: flex;
+            justify-content: space-between;
+        
+            & ul{
+            list-style:none;
+            }
+        }
+
+        & h6 {
+            text-align:center;
+
+        }
+    }
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.social 
+    & a {
+    display: inline-flex;
+    align-items: center;
+}
